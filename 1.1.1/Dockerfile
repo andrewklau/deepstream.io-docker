@@ -29,5 +29,8 @@ EXPOSE 6020
 # TCP Port
 EXPOSE 6021
 
+# Drop root
+USER 1001
+
 # Define default command.
 CMD [ "deepstream" ]

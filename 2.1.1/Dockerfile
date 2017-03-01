@@ -26,5 +26,8 @@ RUN deepstream install storage postgres && \
 # HTTP Port
 EXPOSE 6020
 
+# Drop root
+USER 1001
+
 # Define default command.
 CMD [ "deepstream" ]
